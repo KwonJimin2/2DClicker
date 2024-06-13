@@ -8,26 +8,17 @@ public class ClickEvent : MonoBehaviour
     public Button Button;
     public UIScore Score;
 
-    bool AutoClickOn = false;
+    public int getGold = 1;
     public void OnClickButton()
     {
-        Score.gold += 1;
+        GetGold(getGold);
         Score.times ++;
-        Debug.Log("click");
-    }
-    
-    public void GetAutoClick(float amount)
-    {
-        StartCoroutine(AutoClick(amount));
+        //Debug.Log("click");
     }
 
-    IEnumerator AutoClick(float amount)
+    public void GetGold(int amount)
     {
-        while (AutoClickOn == true)
-        {
-            yield return new WaitForSeconds(amount);
-            OnClickButton();
-        }
+        Score.gold += amount;
     }
 }
 
