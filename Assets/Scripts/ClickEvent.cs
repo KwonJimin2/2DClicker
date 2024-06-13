@@ -6,10 +6,13 @@ using UnityEngine.UI;
 public class ClickEvent : MonoBehaviour
 {
     public Button Button;
+    public UIScore Score;
 
     bool AutoClickOn = false;
     public void OnClickButton()
     {
+        Score.gold += 1;
+        Score.times ++;
         Debug.Log("click");
     }
     
