@@ -122,3 +122,6 @@
 
 
    배경 음악과 클릭 시 클릭 사운드가 나게끔 하였습니다.
+
+
+   ![제목 없음](https://github.com/KwonJimin2/2DClicker/assets/167067342/2c20a238-ebb2-4ad9-bd8f-1b257883af74)
